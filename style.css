@@ -1,0 +1,347 @@
+*{
+    scroll-behavior: smooth;
+    font-family: "Ubuntu", sans-serif !important;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* background img */
+.game{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(./assets/background-image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    color: #a3a5b9 !important; 
+}
+
+.bebo:hover{
+    box-shadow: 
+    0 0 20px 10px rgba(128, 0, 128, 0.8), /* Glowy purple shadow */
+    0 0 5px 2px rgba(255, 255, 255, 0.8), /* Glittery white */
+    0 0 10px 5px rgba(255, 215, 0, 0.6), /* Glittery gold */
+    0 0 15px 10px rgba(0, 255, 255, 0.4); /* Glittery cyan */
+}
+
+.place::placeholder {
+    color: #ffffff; /* Custom placeholder color */
+    opacity: 1; /* Ensures that the color is not faded */
+}
+
+.footer-list a:hover{
+    color: blue !important;
+}
+
+
+/* footer starts here */
+.footer {
+    padding: 40px 0;
+   
+}
+
+.footer-logo {
+    max-width: 150px; 
+    /* margin-bottom: 20px; */
+}
+
+.footer-heading {
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.footer-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    min-width: 0; 
+}
+
+
+.social-icons a {
+    margin-right: 10px;
+    /* color: #333; */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #007bff;
+    background-color: #007bff;
+}
+
+.icon{
+
+    height: 40px;
+    width: 45px;
+    background-color: #333;
+
+}
+
+@media (max-width: 576px) {
+    .footer-input {
+        flex-direction: column;
+    }
+}
+
+
+
+.choose{
+    height: 40px;
+    width: 200px;
+    /* background-color: palevioletred; */
+    border-style: groove;
+}
+
+.choose:hover{
+    box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.5), /* Soft white glow */
+    /* 0 0 30px rgba(255, 223, 0, 0.7),   Gold glitter */
+    0 0 30px rgba(0, 255, 255, 0.6),   /* Cyan glitter */
+    0 0 30px rgba(73, 2, 73, 0.7);   /* Purple glow */
+}
+
+.camera .car:hover{
+    box-shadow: 
+    4px 4px  4px 4px rgba(129, 116, 116, 0.5), /* Soft shadow */
+    4px 4px  4px 4px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+}
+
+
+
+.custom-box {
+    height: 162px;
+    width: 353px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000; 
+    background-color: black;
+   
+}
+
+.custom-box p {
+    font-size: 16px; 
+}
+
+.hover-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center; 
+    border-radius: 8px; 
+}
+
+.hover-container img {
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.hover-container:hover img {
+    transform: scale(1.05); 
+    filter: blur(2px); 
+    opacity: 0.8; 
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: none;
+}
+
+.hover-container:hover .hover-text {
+    display: block;
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+/* styling for the background of form */
+/* form styling  */
+
+.pop{
+    padding-top: 50px;
+    background: #C04848;  
+  
+    background: -webkit-linear-gradient(to right, #480048, #C04848); 
+    background: linear-gradient(to right, #480048, #C04848);
+   
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, blue, to left purple);
+}
+
+
+.cocomo{
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.registration-box {
+  
+    /* min-height: 50vh; */
+    background-color: #010314;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.registration-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.registration-box p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.form-control {
+     background-color: #010314;
+    box-shadow: 1px ghostwhite;
+    color: #fff;
+}
+
+.form-control:focus {
+  
+    color: #fff;
+    border-color: rgb(149, 11, 149);
+    box-shadow: 2px rgb(162, 8, 162);
+    background-color: #010314;
+}
+
+.btn-custom {
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    margin-top: 15px !important;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    display: block;
+    margin: auto;
+  
+}
+
+.btn-custom:hover {
+    box-shadow: 
+        0 0 5px 2px rgba(255, 255, 255, 0.8),
+        0 0 5px 5px rgba(255, 215, 0, 0.6),
+        0 0 5px 5px rgba(255, 0, 255, 0.5),
+        0 0 5px 5px rgba(0, 255, 255, 0.4);
+}
+
+@media (max-width:480px){
+    .btn-custom{
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+/* form styling closes here */
+@media (max-width: 576px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row .col {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:400px){
+.fff .www{
+    margin-top: 15px !important;
+}
+}
+
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
